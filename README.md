@@ -21,16 +21,16 @@
 
 To test locally:
 
-```bash
+
 # Run this in the project directory
+```bash
 python3 -m http.server 8080
+```
 Then open your browser and go to:
 
-arduino
-Copy
-Edit
 http://localhost:8080
-💬 Language Support
+
+## 💬 Language Support
 This template includes built-in language switching between:
 
 🇬🇧 English (en)
@@ -39,18 +39,13 @@ This template includes built-in language switching between:
 
 You’ll find all language content inside:
 
-bash
-Copy
-Edit
 /lang/en.json
 /lang/es.json
 🔁 The language toggle button automatically switches between them.
 🌍 Want to add more? Just fork the repo, add your new .json file, and update the JS logic in language-switcher.js.
 
-📁 Project Structure
-graphql
-Copy
-Edit
+## 📁 Project Structure
+```bash
 .
 ├── index.html               # Homepage
 ├── aboutme.html             # About me section
@@ -69,7 +64,8 @@ Edit
 │   ├── Gifs/                # Hacker-style gif decorations
 │   └── images/              # Portraits, logos, etc.
 └── README.md
-📱 Mobile Ready
+```
+## 📱 Mobile Ready
 This site is built with responsive layouts:
 
 ✅ Scrollable nav
@@ -95,13 +91,10 @@ Swap GIFs and images inside /assets
 
 Update CV filename in the button if you want it downloadable:
 
-html
-Copy
-Edit
 <a href="CV_FernandoLanas.docx.pdf" download class="download-btn">Download CV</a>
 Use your own fonts or colors by editing style.css
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 Tech	Description
 HTML5	Markup for content
 CSS3	Styling (custom hacker aesthetic)
@@ -109,17 +102,17 @@ JavaScript	Language switching & interactivity
 JSON	Content translation storage
 Python	Local testing server
 
-🛠️ Requirements
+## 🛠️ Requirements
 A modern browser (Chrome, Firefox, Edge, Safari)
 
 Python 3 (for local testing)
 
 Optional: VS Code or any HTML editor for editing content
 
-🙌 Contributing & Forking
+## 🙌 Contributing & Forking
 Feel free to fork this repository and replace the placeholder content (Lorem Ipsum, etc.) with your real info.
 
 This project was created to help others launch cool-looking portfolios easily and quickly. No attribution needed — make it yours!
 
-📄 License
+## 📄 License
 MIT License. Free to use, modify, and distribute.
