@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="projects_title">Projects | Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Your Name</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+        <a href="manifesto.html" data-i18n="nav_manifesto">Manifesto</a>
+        <a href="experience.html" data-i18n="nav_experience">Work Experience</a>
+        <a href="certifications.html" data-i18n="nav_certifications">Certifications</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="lang-switcher">
+    <button onclick="loadLanguage('en')">EN</button>
+    <button onclick="loadLanguage('es')">ES</button>
+  </div>
+
+  <div class="gif-wrapper">
+    <img src="Gifs/digitalWorld.gif" alt="Digital World Animation" class="gif-image">
+  </div>
+
+  <section class="section">
+    <h1 data-i18n="projects_heading">Side Projects</h1>
+
+    <p data-i18n="projects_paragraph_1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut justo nec neque tincidunt tempus vel nec lorem. Aenean ac justo ligula.
+    </p>
+
+    <p data-i18n="projects_paragraph_2">
+      Donec scelerisque, nisl vel gravida laoreet, purus magna pulvinar lacus, nec vulputate leo enim eget erat. Mauris condimentum felis non orci malesuada facilisis.
+    </p>
+
+    <p data-i18n="projects_paragraph_3">
+      Curabitur ac bibendum lacus. Etiam vitae mauris ut tellus dapibus mattis non sit amet eros. Integer vehicula lacus vitae pulvinar faucibus.
+    </p>
+
+    <p data-i18n="projects_paragraph_4">
+      Sed cursus elit vitae ipsum convallis, vel ultrices ex aliquam. Cras fringilla, nunc non pulvinar efficitur, justo turpis tincidunt tellus, vel facilisis nulla nulla in sapien.
+    </p>
+
+    <p data-i18n="projects_paragraph_5">
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sit amet libero lobortis, feugiat lorem id, vestibulum ligula.
+    </p>
+
+    <p data-i18n="projects_paragraph_6">
+      Integer nec efficitur velit. Suspendisse potenti. Ut id velit sit amet magna pulvinar sagittis nec non ligula. Nulla facilisi.
+    </p>
+
+    <p data-i18n="projects_paragraph_7">
+      Mauris in nulla vitae urna bibendum fringilla. Quisque eu massa nec sapien suscipit tempor. Ut at urna non tellus rutrum tempor a nec risus.
+    </p>
+
+    <p data-i18n="projects_paragraph_8">
+      Vivamus quis sem ac magna pretium volutpat. Praesent fermentum, turpis ac ullamcorper malesuada, purus lorem posuere orci, sed blandit mi risus ut nibh.
+    </p>
+  </section>
+
+  <script src="lang.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+  </script>
+</body>
+</html>

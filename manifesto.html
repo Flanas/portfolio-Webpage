@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="manifesto_title">Manifesto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Your Name</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+        <a href="experience.html" data-i18n="nav_experience">Work Experience</a>
+        <a href="certifications.html" data-i18n="nav_certifications">Certifications</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="lang-switcher">
+    <button onclick="loadLanguage('en')">EN</button>
+    <button onclick="loadLanguage('es')">ES</button>
+  </div>
+
+  <div class="gif-wrapper">
+    <img src="Gifs/digitalWorld.gif" alt="Digital World Animation" class="gif-image">
+  </div>
+
+  <section class="section">
+    <h1 data-i18n="manifesto_heading">Manifesto</h1>
+
+    <p data-i18n="manifesto_paragraph_1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ex non magna dignissim imperdiet. Sed vitae sem id eros laoreet dignissim.
+    </p>
+
+    <p data-i18n="manifesto_paragraph_2">
+      Integer ut justo a sapien cursus feugiat. Phasellus varius ante non tellus tempor, a aliquam lorem vestibulum. Suspendisse vel laoreet elit.
+    </p>
+
+    <p data-i18n="manifesto_paragraph_3">
+      Vivamus bibendum massa nec lorem iaculis, non iaculis ex aliquam. Aenean ut risus sem. Cras euismod leo at lacus fermentum, non facilisis diam posuere.
+    </p>
+
+    <p data-i18n="manifesto_paragraph_4">
+      Aenean gravida lorem nec orci ultrices, et eleifend mauris ullamcorper. Nunc nec mi eget nunc imperdiet rhoncus. Quisque sed sapien tincidunt, posuere velit sed, tincidunt turpis.
+    </p>
+
+    <p data-i18n="manifesto_paragraph_5">
+      Morbi vehicula lectus nec orci lobortis pretium. Duis eget sapien ac nibh porta efficitur. Ut sit amet massa vel erat eleifend fermentum a at sem.
+    </p>
+
+    <p data-i18n="manifesto_paragraph_6">
+      Donec consequat lacus in sapien bibendum, non pretium metus tristique. Proin vitae finibus diam. Curabitur iaculis nisi ut odio tincidunt rutrum.
+    </p>
+
+    <p data-i18n="manifesto_links_intro">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit:
+    </p>
+    <ul>
+      <li><a href="https://cdn.nakamotoinstitute.org/docs/cypherpunk-manifesto.txt" target="_blank" data-i18n="link_cypherpunk">A Cypherpunk’s Manifesto</a></li>
+      <li><a href="https://pastebin.com/rqrLK6X0" target="_blank" data-i18n="link_sjgr">Sh*t Just Got Real</a></li>
+      <li><a href="https://www.phrack.org/issues/7/3.html" target="_blank" data-i18n="link_hacker_manifesto">The Hacker's Manifesto</a></li>
+    </ul>
+    <em data-i18n="manifesto_disclaimer">
+      Disclaimer: Placeholder text used for demonstration. These links remain for structural consistency only.
+    </em>
+  </section>
+
+  <script src="lang.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="about_title">About Me | Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Your Name</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="manifesto.html" data-i18n="nav_manifesto">Manifesto</a>
+        <a href="experience.html" data-i18n="nav_experience">Work Experience</a>
+        <a href="certifications.html" data-i18n="nav_certifications">Certifications</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="lang-switcher">
+    <button onclick="loadLanguage('en')">EN</button>
+    <button onclick="loadLanguage('es')">ES</button>
+  </div>
+
+  <div class="profile-wrapper">
+    <img src="Pics/placeholder.png" alt="Profile Image">
+  </div>
+
+  <section class="section">
+    <h1 data-i18n="about_heading">About Me</h1>
+
+    <p data-i18n="about_paragraph_1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    </p>
+
+    <p data-i18n="about_paragraph_2">
+      Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+    </p>
+
+    <p data-i18n="about_paragraph_3">
+      Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    </p>
+
+    <p data-i18n="about_paragraph_4">
+      Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.
+    </p>
+  </section>
+
+  <script src="lang.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page_title">Your Name | Placeholder Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Your Name</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+        <a href="manifesto.html" data-i18n="nav_manifesto">Manifesto</a>
+        <a href="experience.html" data-i18n="nav_experience">Work Experience</a>
+        <a href="certifications.html" data-i18n="nav_certifications">Certifications</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="lang-switcher">
+    <button onclick="loadLanguage('en')">EN</button>
+    <button onclick="loadLanguage('es')">ES</button>
+  </div>
+
+  <div class="gif-wrapper">
+    <img src="Gifs/digitalWorld.gif" alt="Digital World Animation" class="gif-image">
+  </div>
+
+  <header>
+    <p data-i18n="header_intro">Hello There! My name is Placeholder, and I'm a</p>
+    <h1 data-i18n="header_title">Example Role</h1>
+  </header>
+
+  <section class="section">
+    <div class="welcome-text">
+      <p data-i18n="welcome_paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent et ipsum at ipsum facilisis commodo.
+        Fusce porta velit nec libero hendrerit, a tincidunt sapien tempus. Nunc non enim nec justo elementum malesuada.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-i18n="about_heading">About This Page</h2>
+    <p data-i18n="about_paragraph_1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum turpis ut arcu fermentum, id lacinia risus sodales.
+      Sed nec ipsum in tellus posuere rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    </p>
+    <p data-i18n="about_paragraph_2">
+      Suspendisse potenti. Proin non sapien et arcu feugiat posuere. Aenean at vehicula urna. Thank you for visiting.
+    </p>
+  </section>
+
+  <script src="lang.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+  </script>
+</body>
+</html>

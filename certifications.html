@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="certs_title">Certifications | Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Your Name</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="aboutme.html" data-i18n="nav_about">About Me</a>
+        <a href="manifesto.html" data-i18n="nav_manifesto">Manifesto</a>
+        <a href="experience.html" data-i18n="nav_experience">Work Experience</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="lang-switcher">
+    <button onclick="loadLanguage('en')">EN</button>
+    <button onclick="loadLanguage('es')">ES</button>
+  </div>
+
+  <div class="gif-wrapper">
+    <img src="Gifs/digitalWorld.gif" alt="Digital World Animation" class="gif-image">
+  </div>
+
+  <section class="section">
+    <h1 data-i18n="certs_heading">Certifications</h1>
+
+    <p data-i18n="certs_intro">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis, metus non egestas aliquet, lorem leo viverra nulla, sed posuere ante justo nec sapien.
+    </p>
+
+    <ul>
+      <li data-i18n="certs_1">Lorem Ipsum Certificatio | Dolor Institute</li>
+      <li data-i18n="certs_2">Tempor Incididunt Badge | Amet Academy</li>
+      <li data-i18n="certs_3">Ut Enim Developer Credential | Lorem Labs</li>
+      <li data-i18n="certs_4">Sed Do Foundations Certificate | Ipsum Cert</li>
+      <li data-i18n="certs_5">Consectetur Governance | Elit University</li>
+    </ul>
+
+    <p data-i18n="certs_closing">
+      Nullam vel elit ac nisl luctus fringilla. Etiam vel sapien dignissim, fermentum lacus nec, fermentum justo. Vivamus pretium ante vel augue elementum, ac ultrices justo gravida.
+    </p>
+  </section>
+
+  <script src="lang.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+  </script>
+
+</body>
+</html>
